@@ -6,7 +6,7 @@
 
 use strict;
 use warnings;
-use Test::Simple tests => 18;
+use Test::Simple tests => 20;
 use Locale::SubCountry;
 
 my $australia = new Locale::SubCountry('Australia');
@@ -60,7 +60,6 @@ ok(@all_country_names, "all_full_names method returns data for world object");
 my $UK = new Locale::SubCountry('GB');
 ok($UK->regional_division('DGY') eq 'SCT', "Initialise new method with a 2 letter country code");
 
-
-
-
-
+my $BR = Locale::SubCountry->new('BR');
+ok length $BR->full_name('PR') == 6, "Proper encoding";
+ok length $BR->full_name('MA') == 8, "Proper encoding";
