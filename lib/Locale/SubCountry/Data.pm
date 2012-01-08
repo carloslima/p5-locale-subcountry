@@ -7142,7 +7142,7 @@ q{
     <FIPS>23</FIPS>
   </subcountry>
   <subcountry>
-    <name>RondFnia</name>
+    <name>Rondônia</name>
     <code>RO</code>
     <category>state</category>
     <FIPS>24</FIPS>
